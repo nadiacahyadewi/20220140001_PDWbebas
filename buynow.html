@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="buynow.css">
+    <title>Purchase Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"> <img src="assets/new.png" class="imgnav" alt="..."></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Produk</a>
+              </li>
+              <li>
+                <a class="nav-link" href="kontak.html">Contact us</a>
+              </li>
+            </ul>
+      </nav>
+      <br><br>
+    <div class="containers">
+        <h1>Purchase Form</h1>
+        <form id="purchaseForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="size">Size</label>
+                <select id="size" name="size" required>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" required min="1">
+            </div>
+            <div class="form-group">
+                <button type="submit">Buy Now</button>
+            </div>
+            <div id="alert" class="alert"></div>
+        </form>
+    </div>
+    <footer class="footer mt-4 py-3 text-center">
+        <div class="container">
+          &copy; 2024 Nadia's Fashion Boutique. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
